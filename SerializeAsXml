@@ -1,0 +1,1 @@
+javascript:(function(){ function htmlEscape(s){s=s.replace(/&/g,'&amp;');s=s.replace(/>/g,'&gt;');s=s.replace(/</g,'&lt;');return s;} var serializer = new XMLSerializer(); var source = serializer.serializeToString(document.documentElement, "application/xml"); var x=window.open('data:text/plain;charset=UTF-8,' + encodeURIComponent(source)); })();
